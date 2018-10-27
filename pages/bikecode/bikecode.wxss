@@ -1,0 +1,31 @@
+/* pages/bikecode/bikecode.wxss */
+
+/* pages/charge/charge.wxss */
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150rpx;
+}
+.header image{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.header .textbalance{
+  margin-top: 20rpx;
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+  color: navy;
+}
+
+.header .balancemoney{
+  font-size: 70rpx;
+}
+
+.mainbox{
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

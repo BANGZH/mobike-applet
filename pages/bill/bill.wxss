@@ -1,0 +1,91 @@
+/* pages/ bill/bill.wxss */
+page { background-color: #eff3f6; }
+.billbox{
+   margin: 20rpx;
+   padding: 20rpx;
+   /* border: 1px salmon solid; */
+   border-radius: 10px;
+   background-color: #ffffff;
+ } 
+
+/* 以下是billheader样式 */
+.billheader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid saddlebrown; */
+  border-bottom: 1px solid silver;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+}
+
+.billheader .headerleft{
+  display: flex;
+  flex-direction: row;
+}
+.billheader button{
+  color: white;
+  background-color: #60636a;
+}
+.billheader image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.billheader .bike{
+  display: flex;
+  flex-direction: column;
+}
+
+.billheader .bike .bikeidtext{
+  color: slategray;
+  font-size: 35rpx;
+}
+
+.billheader .bike .bikeid{
+  color: #60636a;
+  font-size: 35rpx;
+}
+
+/* 以下是billbody样式 */
+.billbox .billbody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid silver;
+  padding: 30rpx;
+}
+
+.billbox .billbody .billamount{
+  color:#60636a;
+  font-size: 50rpx;
+}
+/* 以下是billfooter样式 */
+.billbox .billfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+
+.billbox .billfooter .footericon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.billbox .billfooter .footericon image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.billbox .billfooter .footericon .footerexplain{
+  color: #60636a;
+}
+
+.billbox .billfooter .begintime{
+  color: #60636a;
+  font-size: 35rpx;
+}

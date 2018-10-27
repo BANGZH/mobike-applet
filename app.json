@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/registered/registered",
+    "pages/index/index",
+    "pages/person/person",
+    "pages/bill/bill",
+    "pages/inputbikecode/inputbikecode",
+    "pages/biking/biking",
+    "pages/bikecode/bikecode",
+    "pages/paybill/paybill",
+    "pages/deposit/deposit",
+    "pages/charge/charge",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "膜拜单车",
+    "navigationBarTextStyle": "black"
+  }
+}

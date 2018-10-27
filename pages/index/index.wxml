@@ -1,0 +1,9 @@
+<map id="myMap" style="width: 100%; height: 300px;" longitude="116.313972" latitude="39.980014" scale='16' subkey="DCUBZ-CKNRF-LZAJU-JYNME-Z2UQ2-ENFI2" polyline="{{polyline}}" markers="{{markers}}" style='width:100%;height:505px;'></map>
+<view class='footerB'>
+  <view class='footerc'>
+    <image src='/resources/header.png' bindtap='toperson'></image>
+    <button class='scancode' bindtap='scanopen'>扫码开锁</button>
+    <image src='/resources/header.png' bindtap='toperson'></image>
+  </view>
+  <button class='inputbikeno' bindtap='inputopen'>输入车牌开锁</button>
+</view>

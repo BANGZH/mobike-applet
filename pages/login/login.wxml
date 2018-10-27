@@ -1,0 +1,22 @@
+<view class='loginbox'>
+  <image class="headimage" src='/resources/bike.png'></image>
+
+  <view>
+    <input class='userphone' placeholder='请输入输入手机号码' placeholder-class='placeholderstyle' name="userphone" bindinput='getinputphone'></input>
+    <view class='codebox'>
+      <input class='vercode' placeholder='输入验证码' placeholder-class='placeholderstyle'  name="vercode" bindinput='getinputcode'></input>
+      <button class='verbtn' bindtap='getvercode2'>获取验证码</button>
+      <!-- <view class='getcodebtn' bindtap='getcode'>
+        <text>获取验证码</text>
+      </view> -->
+    </view>
+    <!-- <text class='tiptext' bindtap=''>验证码已发送</text> -->
+  </view>  
+   <button bindtap='gologin2' class='btn'>确认登陆</button>
+
+</view>
+
+<button class='registered' bindtap='toRegistered'>前往注册</button>
+
+
+<button class='registered' bindtap='showver'>显示</button>

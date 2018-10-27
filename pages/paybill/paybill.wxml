@@ -1,0 +1,36 @@
+<!--pages/paybill/paybill.wxml-->
+<view class='header'>
+  <image src='/resources/payicon.png'></image>
+  <view class='mainbox'>
+  <view class='headertext'>
+    <view class='textarea'>
+      <image src='/resources/bikeicon1.png'></image>
+      <text class='biketext'> 订单编号：</text>
+    </view>
+    <text class='bikeid'>{{list.recordId}}</text>
+  </view>
+  <view class='headertext'>
+    <view class='textarea'>
+      <image src='/resources/timeicon.png'></image>
+      <text class='biketimetext'> 起始时间：</text>
+    </view>
+    <text class='biketime'>{{list.recordCreateTime}}</text>
+  </view>
+  <view class='headertext'>
+    <view class='textarea'>
+      <image src='/resources/timeicon.png'></image>
+      <text class='biketimetext'> 结束时间：</text>
+    </view>
+    <text class='biketime'>{{list.recordEndTime}}</text>
+  </view>
+  <view class='headertext'>
+    <view class='textarea'>
+      <image src='/resources/money4.png'></image>
+      <text class='amounttext'> 应付金额：</text>
+    </view>
+    <text class='amount'>{{list.recordExpense}}</text>
+  </view>
+
+  <button class='subpay' bindtap='subpay' data-recordid='{{list.recordId}}'>确认支付</button>
+  </view>
+</view>

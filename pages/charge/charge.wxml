@@ -1,0 +1,13 @@
+<!--pages/charge/charge.wxml-->
+<view class='header'>
+  <image src='/resources/balance.png'></image>
+  <text class='textbalance'>账户余额</text>
+  <text class='balancemoney'>{{list[0].userBalance}}元</text>
+</view>
+
+<view class='mainbox'>
+  <form bindsubmit='chargeConfirm' >
+      <input class='inputmoney' type='number' placeholder='请输入充值金额' name="inputmoney" placeholder-class='pc'></input>
+      <button class='submitbtn' form-type='submit'>充值</button>
+  </form>
+</view>

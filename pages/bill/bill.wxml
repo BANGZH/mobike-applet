@@ -1,0 +1,56 @@
+<!--pages/ bill/bill.wxml-->
+<block wx:for="{{list}}" wx:for-index="index">
+<view class='billbox'>
+  <!-- billheader主体样式 -->
+  <view class='billheader'>
+    <view class='headerleft'>
+      <image class='bikeicon' src='/resources/bikeicon1.png'></image>
+      <view class='bike'>
+        <text class='bikeidtext'>订单编号</text>
+        <text class='bikeid'>{{item.recordId}}</text>
+      </view>
+    </view>
+    <view>
+    <view wx:if="{{item.recordStatus < 0}}">
+      <button bindtap='topay' data-recordid='{{item.recordId}}' data-index='{{index}}'>结束行程支付</button>
+    </view>
+
+    <view wx:if="{{item.recordStatus == 0}}">
+      <button bindtap='deleterecord' data-recordid='{{item.recordId}}' data-index='{{index}}'>删除记录</button>
+    </view>
+    </view>
+  </view>
+
+  <!-- billbody主体样式 -->
+  <view class='billbody'>
+    <text class='billamount'>{{item.recordExpense}}元</text>
+  </view>
+
+  <view class='billfooter'>
+    <view>
+      <!-- footer图标数据排 -->
+      <view class='footericon'>
+        <image src='/resources/begintimeicon.png' class='footericon'></image>
+        <text class='footerexplain'>起始时间</text>
+      </view>
+      <!-- footer说明排 -->
+      <view class='begintime'>
+        <text>{{item.recordCreateTime}}</text>
+      </view>
+    </view>
+
+    <view class='footerset'>
+      <!-- footer图标数据排 -->
+      <view class='footericon'>
+        <image src='/resources/endtimeicon.png' class='footericon'></image>
+        <text class='footerexplain'>结束时间</text>
+      </view>
+      <!-- footer说明排 -->
+      <view class='begintime'>
+        <text>{{item.recordEndTime}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+</block>

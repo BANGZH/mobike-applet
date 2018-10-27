@@ -1,0 +1,27 @@
+<!--pages/deposit/deposit.wxml-->
+<view class='header'>
+  <image src='/resources/deposit.png'></image>
+  <text class='textdeposit'>押金状态</text>
+  <view wx:if="{{list[0].userDeposit != 0}}">
+    <text class='depositstatus'>已缴纳</text>
+  </view>
+  <view wx:if="{{list[0].userDeposit == 0}}">
+    <text class='depositstatus'>未缴纳</text>
+  </view>
+</view>
+
+<view class='mainbox'>
+  <!-- <input class='inputmoney' type='number' placeholder='请输入充值金额' name="inputmoney" placeholder-class='pc'></input> -->
+  <view wx:if="{{list[0].userDeposit > 0}}">
+    <button class='submitbtn' bindtap='backdeposit' data-userphone='{{list[0].userPhone}}'>
+      退押金
+    </button>
+  </view>
+
+  <view wx:if="{{list[0].userDeposit == 0}}">
+    <button class='submitbtn' bindtap='paydeposit' data-userphone='{{list[0].userPhone}}'>
+      缴纳押金
+    </button>
+  </view>
+
+</view>

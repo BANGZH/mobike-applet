@@ -1,0 +1,13 @@
+<!--pages/bikecode/bikecode.wxml-->
+<view class='header'>
+  <image src='/resources/lock.png'></image>
+  <text class='textbalance'>开锁密码</text>
+  <text class='balancemoney'>1234{{list.returndata}}</text>
+</view>
+
+<view class='mainbox'>
+  <view class='tip'>
+      <text>注意：10s开始计费</text>
+  </view>
+
+</view>

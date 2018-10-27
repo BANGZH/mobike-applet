@@ -1,0 +1,12 @@
+<!--pages/biking/biking.wxml-->
+<!--pages/bikecode/bikecode.wxml-->
+<view class='header'>
+  <image src='/resources/timeicon.png'></image>
+  <text class='textbalance'>骑行时间</text>
+  <text class='balancemoney'>{{hours}}:{{minutes}}:{{seconds}}</text>
+</view>
+
+<view class='mainbox'>
+      <button class='submitbtn' bindtap='endride' disabled='{{clickBtn}}'>结束骑行</button>
+      <button class='submitbtn' bindtap='toPay' disabled='{{clickBtn2}}'>去支付</button>
+</view>

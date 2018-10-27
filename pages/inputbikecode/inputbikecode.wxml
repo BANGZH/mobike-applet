@@ -1,0 +1,13 @@
+<!--pages/inputbikecode/inputbikecode.wxml-->
+<view class='header'>
+  <image src='/resources/bikeicon.png'></image>
+  <!-- <text class='textbalance'>请输入车牌号</text> -->
+  <text class='balancemoney'>请输入车牌号</text>
+</view>
+
+<view class='mainbox'>
+  <form bindsubmit='openlock' >
+      <input class='inputmoney' type='number' placeholder='请输入车牌号' name="bikeid" placeholder-class='pc'></input>
+      <button class='submitbtn' form-type='submit'>解锁</button>
+  </form>
+</view>

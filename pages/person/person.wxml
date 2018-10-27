@@ -1,0 +1,39 @@
+<view class='header'>
+  <image src='/resources/header.png' class="headphoto"></image>
+  <text class='userphone'>{{list[0].userPhone}}</text>
+</view>
+
+<view class='mianbox'>
+  <view class='blance'>
+    <view class='xx'>
+      <image class='iimage' src='/resources/money2.png'></image>
+      <text>我的余额：</text>
+    </view>
+    <text bindtap='toBalance' class='transtext' data-userphone='{{list[0].userPhone}}'>{{list[0].userBalance}} 元></text>
+  </view>
+
+  <view class='deposit'>
+    <view class='xx'>
+      <image class='iimage' src='/resources/money.png'></image>
+      <text>押金状态:</text>
+    </view>
+    <view wx:if="{{list[0].userDeposit == 0}}">
+      <text bindtap='toDeposit' class='transtext' data-userphone='{{list[0].userPhone}}'>未缴纳></text>
+    </view>
+    <view wx:if="{{list[0].userDeposit > 0}}">
+      <text bindtap='toDeposit' class='transtext' data-userphone='{{list[0].userPhone}}'>已缴纳></text>
+    </view>
+    <!-- <button>退押金</button> -->
+  </view>
+
+  <view class='trip'>
+    <view class='xx'>
+      <image class='iimage' src='/resources/bill.png'></image>
+      <text>我的行程</text>
+    </view>
+    <text bindtap='toBill' class='transtext' data-userphone='{{list[0].userPhone}}'>查看></text>
+  </view>
+</view>
+<view class='footer'>
+  <button class='loginout' bindtap='loginout' data-userphone='{{list[0].userPhone}}'>退出登录</button>
+</view>
