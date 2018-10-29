@@ -13,6 +13,7 @@
   margin-bottom: 100rpx;
 }
 
+.inputbox 
 .userphone {
   height: 90rpx;
   background-color: #f4f7f6;
@@ -25,13 +26,11 @@
   justify-content: space-between;
 }
 
-.verbtn{
-
+.verbtn {
   border-radius: 10px;
   background-color: #53c19c;
   color: white;
-  margin-left: 10rpx
- 
+  margin-left: 10rpx;
 }
 
 .codebox .vercode {
@@ -42,7 +41,7 @@
   margin-bottom: 10rpx;
 }
 
-.tiptext{
+.tiptext {
   font-size: 30rpx;
   color: #cbcfce;
 }
@@ -54,7 +53,78 @@
   margin-top: 15rpx;
 }
 
-.placeholderstyle{
+.placeholderstyle {
   color: #cbcfce;
   font-size: 35rpx;
+}
+
+/* 
+修改后 
+*/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px saddlebrown solid; */
+}
+
+.header image {
+  width: 329rpx;
+  height: 212rpx;
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+}
+
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px salmon solid; */
+  align-items: center;
+}
+
+/* 
+对手机号码区域
+ */
+
+.mainbox .phonearea {
+  margin-top: 15rpx;
+  width: 600rpx;
+}
+
+.mainbox .phonearea input {
+  width: 100%;
+  height: 100rpx;
+  border-radius: 15rpx;
+  border: 1px #53c19c solid;
+}
+
+/*
+   对验证码区域
+ */
+
+.mainbox .codearea {
+  width: 600rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px seagreen solid; */
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.mainbox .codearea input {
+  border: 1px #53c19c solid;
+  border-radius: 15rpx;
+  width: 300rpx;
+  height: 95rpx;
+}
+
+.mainbox .codearea button{
+  border-radius: 10px;
+  background-color: #53c19c;
+  color: white;
+  margin-left: 10rpx;
+  height: 100%;
 }

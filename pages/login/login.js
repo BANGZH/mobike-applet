@@ -79,15 +79,14 @@ Page({
   // 获取验证码
   getcode:function(){
     var userphone = this.data.userphone;
-    // 验证手机号码的正则表达式
-    // var judge = 
 
     wx.request({
       url: 'http://127.0.0.1:8080/user/login/requestSMS/'+userphone,
       method:'GET',
       data:{},
       success:function(res){
-        console.log(res.data);
+        console.log("ddd"+res);
+        // console.log(res.data);
         if(res.data.code == 1){
             wx.showToast({
               title: '验证码发送成功',
@@ -100,12 +99,8 @@ Page({
   // 确认登陆验跳转
   gologin:function(event){
     var that = this;
-    // console.log(event.detail.value.userphone);
-    // var userphone = event.detail.value.userphone;
-    // var vercode = event.detail.value.vercode;
     var userphone = that.data.userphone;
     var vercode = that.data.vercode;
-    // console.log(vercode);
     wx.request({
       url: 'http://127.0.0.1:8080/user/login/' + userphone,
       method:'POST',
@@ -131,7 +126,6 @@ Page({
     })
   },
 
-
   // 显示用户手机验证码
   showver:function(){
     console.log(this.data.userphone+"验证码"+this.data.vercode);
@@ -146,7 +140,8 @@ Page({
       method: 'GET',
       data: {},
       success: function (res) {
-        console.log(res.data);
+        console.log(res)
+        // console.log(res.data);
         if (res.data.code == 1) {
           wx.showToast({
             title: '验证码发送成功',
@@ -164,12 +159,8 @@ Page({
 
   gologin2: function (event) {
     var that = this;
-    // console.log(event.detail.value.userphone);
-    // var userphone = event.detail.value.userphone;
-    // var vercode = event.detail.value.vercode;
     var userphone = that.data.userphone;
     var vercode = that.data.vercode;
-    // console.log(vercode);
     wx.request({
       url: 'http://127.0.0.1:8080/user/login/' + userphone,
       method: 'POST',
