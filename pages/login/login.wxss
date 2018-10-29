@@ -1,5 +1,5 @@
 /* pages/login/login.wxss */
-
+/* 
 .loginbox {
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@
 .placeholderstyle {
   color: #cbcfce;
   font-size: 35rpx;
-}
+} */
 
 /* 
 修改后 
@@ -124,7 +124,29 @@
 .mainbox .codearea button{
   border-radius: 10px;
   background-color: #53c19c;
-  color: white;
-  margin-left: 10rpx;
+  color: whitesmoke;
+  /* margin-left: 10rpx; */
   height: 100%;
+}
+
+.mainbox .subbtn{
+  /* border: 1px forestgreen solid; */
+  margin-top: 20rpx;
+  width: 600rpx;
+}
+
+.mainbox .subbtn button{
+  width: 100%;
+  border-radius: 15rpx;
+  background-color: #53c19c;
+  color: whitesmoke;
+}
+
+.mainbox .subbtn .registered{
+  background-color: rgb(233, 125, 125);
+}
+.placeholderstyle {
+  color: #cbcfce;
+  font-size: 35rpx;
+  margin-left: 15rpx;
 }
