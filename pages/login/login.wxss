@@ -1,67 +1,7 @@
 /* pages/login/login.wxss */
 /* 
-.loginbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.headimage {
-  width: 329rpx;
-  height: 212rpx;
-  margin-top: 150rpx;
-  margin-bottom: 100rpx;
-}
-
-.inputbox 
-.userphone {
-  height: 90rpx;
-  background-color: #f4f7f6;
-  border-radius: 13px;
-  margin-bottom: 30rpx;
-}
-
-.codebox {
-  display: flex;
-  justify-content: space-between;
-}
-
-.verbtn {
-  border-radius: 10px;
-  background-color: #53c19c;
-  color: white;
-  margin-left: 10rpx;
-}
-
-.codebox .vercode {
-  height: 90rpx;
-  width: 230rpx;
-  background-color: #f4f7f6;
-  border-radius: 13px;
-  margin-bottom: 10rpx;
-}
-
-.tiptext {
-  font-size: 30rpx;
-  color: #cbcfce;
-}
-
-.btn {
-  color: white;
-  border-radius: 10px;
-  background-color: #53c19c;
-  margin-top: 15rpx;
-}
-
-.placeholderstyle {
-  color: #cbcfce;
-  font-size: 35rpx;
-} */
-
-/* 
 修改后 
 */
-
 .header {
   display: flex;
   flex-direction: column;

@@ -20,6 +20,8 @@ Page({
     this.data.vercode = e.detail.value;
   },
 
+ 
+
   // 获取验证码
   getvercode:function(){
       var that = this;

@@ -1,6 +1,5 @@
 // pages/registered/registered.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -8,12 +7,23 @@ Page({
     list: [],
     userphone: null,
     vercode: null,
+    userpid:null
   },
   
     // 记录输入的手机号码
-  inputphone: function (e) {
+  getinputphone: function (e) {
     this.data.userphone = e.detail.value;
     // console.log(e.detail.value);
+  },
+  //记录用户输入的身份证
+  getuserpid:function(e){
+      this.data.userpid = e.detail.value; 
+  },
+
+  //记录用户当前输入的验证码
+  getinputcode: function (e) {
+    this.data.vercode = e.detail.value;
+    // console.log(this.data)
   },
 
   // 点击获取验证码
@@ -31,6 +41,13 @@ Page({
             title: '验证码发送成功',
           })
         }
+        else{
+          var tip= res.data.mes;
+          wx.showModal({
+            title: '提示',
+            content: tip,
+          })
+        }
       }
     })
   },
@@ -38,9 +55,9 @@ Page({
   // 确认注册
   goregistered: function (event) {
     // console.log(event.detail.value.userphone);
-    var userphone = event.detail.value.userphone;
-    var vercode = event.detail.value.vercode;
-    var pid = event.detail.value.pid;
+    var userphone = this.data.userphone
+    var vercode = this.data.vercode;
+    var pid = this.data.userpid;
     
     wx.request({
       url: 'http://127.0.0.1:8080/user/register',
@@ -65,8 +82,7 @@ Page({
         else{
           var mes = res.data.mes;
           wx.showToast({
-            title: mes
-            
+            title: mes, 
           })
         }
       }

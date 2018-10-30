@@ -1,61 +1,91 @@
 /* pages/registered/registered.wxss */
 /* pages/login/login.wxss */
 
-.loginbox {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px saddlebrown solid; */
 }
 
-.headimage {
+.header image {
   width: 329rpx;
   height: 212rpx;
-  margin-top: 150rpx;
+  margin-top: 100rpx;
   margin-bottom: 100rpx;
 }
 
-.userphone {
-  height: 90rpx;
-  background-color: #f4f7f6;
-  border-radius: 13px;
-  margin-bottom: 30rpx;
-}
-
-.codebox {
+.mainbox {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* border: 1px salmon solid; */
+  align-items: center;
 }
 
-.verbtn{
+/* 
+对手机号码区域
+ */
 
-  border-radius: 10px;
-  background-color: #53c19c;
-  color: white;
-  margin-left: 10rpx
- 
-}
-
-.codebox .vercode {
-  height: 90rpx;
-  width: 230rpx;
-  background-color: #f4f7f6;
-  border-radius: 13px;
-  margin-bottom: 10rpx;
-}
-
-.tiptext{
-  font-size: 30rpx;
-  color: #cbcfce;
-}
-
-.btn {
-  color: white;
-  border-radius: 10px;
-  background-color: #53c19c;
+.mainbox .phonearea {
   margin-top: 15rpx;
+  width: 600rpx;
 }
 
-.placeholderstyle{
+.mainbox .phonearea input {
+  width: 100%;
+  height: 100rpx;
+  border-radius: 15rpx;
+  border: 1px #53c19c solid;
+}
+
+/*
+   对验证码区域
+ */
+
+.mainbox .codearea {
+  width: 600rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px seagreen solid; */
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.mainbox .codearea input {
+  border: 1px #53c19c solid;
+  border-radius: 15rpx;
+  width: 300rpx;
+  height: 95rpx;
+}
+
+.mainbox .codearea button{
+  border-radius: 10px;
+  background-color: #53c19c;
+  color: whitesmoke;
+  /* margin-left: 10rpx; */
+  height: 100%;
+}
+
+.mainbox .subbtn{
+  /* border: 1px forestgreen solid; */
+  margin-top: 20rpx;
+  width: 600rpx;
+}
+
+.mainbox .subbtn button{
+  width: 100%;
+  border-radius: 15rpx;
+  background-color: #53c19c;
+  color: whitesmoke;
+}
+
+.mainbox .subbtn .registered{
+  background-color: rgb(233, 125, 125);
+}
+.placeholderstyle {
   color: #cbcfce;
   font-size: 35rpx;
+  margin-left: 15rpx;
 }
